@@ -8,14 +8,18 @@
 ################################################################################
 # 00 BIAS-CORRECTION
 ################################################################################
+# Load modeled temperature
+load("/data/modeled/ssp126.RData")
+load("/data/modeled/ssp245.RData")
+load("/data/modeled/ssp585.RData")
+
 # LOAD BIAS CORRECTION FUNCTION
 # This is a function created to apply the bias-correction method developed 
 #    within ISI-MIP (Hempel et al. 2013). More details on the calibration 
 #    procedure are described in the "fhempel.R" code.
-
 # RE-CALIBRATE USING THE BIAS CORRECTION FUNCTION
 source("/data/modeled/fhempel.r")
-
+################################################################################
 # 1. Transformation data structure for calibration
 ssp126_list = ssp245_list = ssp585_list = list()
 

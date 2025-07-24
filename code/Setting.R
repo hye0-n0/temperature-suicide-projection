@@ -1,5 +1,5 @@
 ################################################################################
-# FILE NAME: 0.Setting @Codes/MAIN
+# FILE NAME: Setting @Codes/MAIN
 # Load packages
 # default library
 library(dplyr) ; library(tidyr) ; library(MASS) ; library(ggplot2)
