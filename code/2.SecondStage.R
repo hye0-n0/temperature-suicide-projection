@@ -10,9 +10,11 @@
 #     predcoefs, predvcov: Pooled overall cumulative association prediction (.RData)
 #     Figure S3, Figure 1
 ################################################################################
+# Load observed data
+# load("/data/observed/slist.RData")
+# load("/data/observed/city_list.RData")
+
 # Load 1st stage ouput data
-load("/data/observed/slist.RData")
-load("/data/observed/city_list.RData")
 load("/data/output//1st_coef_vcov.RData")
 ################################################################################
 # 02 Multivariate meta-analysis of reduced coef and computation of BLUPs
@@ -54,6 +56,7 @@ save(metavariable, file="/data/output/metavariable.RData")   # fixed-effect
 blupres = blup(mvoverall, type = "residual", vcov = T) 
 rancoef = sapply(blupres, "[[", "blup") |> t()     # coefs and vcovs
 ranvcov = sapply(blupres, function(x) vechMat(x$vcov)) |> t()
+names(blupres) = names(slist)
 save(blupres, file="/data/output/blupres.RData")   # random-effect
 
 # 6. Pooled overall cumulative association prediction (Pooled fixed effect and random effect)
@@ -157,8 +160,9 @@ for(i in names(mvpred)){
 }
 # save(cp.region, file="cp_region.RData")
 
-# 3. Plot the cumulative RR curves by location
+# 3. Plot the cumulative RR curves by region
 # - Figure 1
+pdf("/results/Figure1.pdf", width = 7, height = 3.5)
 par(mfrow = c(2, 5), mar = c(4, 4, 3, 1))  # 아래, 왼쪽, 위, 오른쪽 여백 조정
 regions <- names(cp.region)
 for (region in regions) {
@@ -168,4 +172,5 @@ for (region in regions) {
        col = "red", lwd = 2, ci.arg = list(col = rgb(0, 0, 1, 0.2)), ylim = c(0.5, 2.5))
   abline(h = 1, lty = 2, col = "gray")
 }
+dev.off()
 

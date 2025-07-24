@@ -8,10 +8,14 @@
 ################################################################################
 # 00 BIAS-CORRECTION
 ################################################################################
-# Load modeled temperature
+# Load modeled temperature data
 load("/data/modeled/ssp126.RData")
 load("/data/modeled/ssp245.RData")
 load("/data/modeled/ssp585.RData")
+
+# Load observed data
+load("/data/observed/slist.RData")
+load("/data/observed/city_list.RData")
 
 # LOAD BIAS CORRECTION FUNCTION
 # This is a function created to apply the bias-correction method developed 

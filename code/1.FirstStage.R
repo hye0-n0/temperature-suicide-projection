@@ -7,8 +7,8 @@
 #     coefall, vcovall: cumulative overall coefficient and covariance (.RData)
 ################################################################################
 # Load observed data
-load("/data/observed/slist.RData")
-load("/data/observed/city_list.RData")
+# load("/data/observed/slist.RData")
+# load("/data/observed/city_list.RData")
 ################################################################################
 # DEFINE THE MAIN PARAMETERS FOR THE ANALYSIS
 # 1. Specification of Exposure function
@@ -119,7 +119,7 @@ names(vcovall) = names(slist)
 names(res) = names(slist)
 
 # 3. Save cumulative overall est (coef, cov)
-save(coefall, vcovall, file = "1st_coef_vcov.RData")
+save(coefall, vcovall, file = "/data/output/1st_coef_vcov.RData")
 
 ################################################################################
 # - PLOT (OVERALL CUMULATIVE LOCATION-SPECIFIC ASSOCIATION FOR 1ST STAGE)
@@ -127,7 +127,7 @@ save(coefall, vcovall, file = "1st_coef_vcov.RData")
 #     in terms of relative risks (RR) and centered in the 50% of temperature, 
 #     across the 3 days of lag.
 
-pdf("1st_stage_overall.pdf",width=9,height=13)
+# pdf("/results/1st_stage_overall.pdf",width=9,height=13)
 layout(matrix(seq(6*4),nrow=6,byrow=T))
 par(mar=c(4,3.8,3,2.4),mgp=c(2.5,1,0),las=1)
 xlab = expression(paste("Temperature (",degree,"C)"))
@@ -136,6 +136,6 @@ for(i in seq(pred1st)) {
        ylab="RR",xlab=xlab, main=paste("Overall -", city_list$citynm[[i]]), lwd = 2)
   abline(v=per[i, "50%"], col=c(2),lty=c(4))
 }
-dev.off()
+# dev.off()
 
 

@@ -7,7 +7,7 @@
 #     suicideproj: modeled sucide series (.RData)
 ################################################################################
 # Load observed data
-load("/data/observed/slist.RData")
+# load("/data/observed/slist.RData")
 ################################################################################
 # 03 CREATE MODELED SUICIDE SERIES
 ################################################################################

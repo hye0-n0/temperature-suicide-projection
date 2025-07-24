@@ -7,18 +7,18 @@
 #     anabs_city,afabs_city,anrel_city,afrel_city: attributable number and fraction by city (.RData)
 ################################################################################
 # Load data
-load("/data/observed/slist.RData")
-load("/data/observed/city_list.RData")
+# load("/data/observed/slist.RData")
+# load("/data/observed/city_list.RData")
 
-load("/data/modeled/ssp126cal_50s.RData")
-load("/data/modeled/ssp245cal_50s.RData")
-load("/data/modeled/ssp585cal_50s.RData")
-load("/data/modeled/modeled_suicide.RData")
+# load("/data/modeled/ssp126cal_50s.RData")
+# load("/data/modeled/ssp245cal_50s.RData")
+# load("/data/modeled/ssp585cal_50s.RData")
+# load("/data/modeled/modeled_suicide.RData")
 
-load("/data/output/mvoverall.RData")
-load("/data/output/metavariable.RData")
-load("/data/output/blupres.RData")
-load("/data/output/New_blups.RData")
+# load("/data/output/mvoverall.RData")
+# load("/data/output/metavariable.RData")
+# load("/data/output/blupres.RData")
+# load("/data/output/New_blups.RData")
 ################################################################################
 # 04 EXTRAPOLATION OF THE EXPOSURE-RESPONSE CURVE
 # 05 PROJECTION & QUANTIFICATION OF THE IMPACT
@@ -186,7 +186,9 @@ for(loc in location){
 
 # ESTIMATE AN IN EACH PERIOD RELATIVE TO CURRENT DAYS (2010-19)
 ansim[,,,"rel",,,] <- ansim[,,,"abs",,,] - ansim[,rep("2010-19",length(levels(seqperiod))),,"abs",,,]
-# save(ansim, file="ansim.RData")
+
+# SAVE SIMULATED AN DATA
+save(ansim, file="/data/output/ansim.RData")
 
 ################################################################################
 # COMPUTE AN/AF (95%CI) IN THE ENSEMBLE, BY REGION & RANGE & PERIOD & SSP
@@ -302,8 +304,8 @@ for (i in names(suicide_region)) {
 }
 
 # 5. SAVE AN, AF DATASETS
-save(anabs, anrel, afabs, afrel, file="/data/outputANAF.RData")
-save(anabs_city,afabs_city,anrel_city,afrel_city, file="/data/outputANAF_city.RData")
+save(anabs, anrel, afabs, afrel, file="/data/output/ANAF.RData")
+save(anabs_city,afabs_city,anrel_city,afrel_city, file="/data/output/ANAF_city.RData")
 
 ################################################################################
 # - FIGURE 2 (Difference in total AF%)
@@ -408,7 +410,7 @@ legend_plot <- legend_all[[3]]
 yaxis_grob <- textGrob("Difference in total attributable fraction (AF) (%)", rot = 90, gp = gpar(fontsize = 8))
 
 # 5. Plot grid
-pdf("Figure3.pdf", width = 7, height = 3.5)
+pdf("/results/Figure3.pdf", width = 7, height = 3.5)
 plots_per_page <- 10
 for (i in seq(1, length(plot_list), by = plots_per_page)) {
   page_plots <- plot_list[i:min(i + plots_per_page - 1, length(plot_list))]
