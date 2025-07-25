@@ -2,19 +2,19 @@ metadata_version: 1
 name: 'Projections of temperature-related suicide mortality under climate change:
   A multi-country time-series study'
 description: |-
-  ### Overview
+  #### Overview
   This project investigates the projected impact of climate change on suicide mortality across multiple cities worldwide. The analysis uses temperature–suicide associations estimated from historical data, combined with modeled temperature projections under different Shared Socioeconomic Pathway (SSP) climate scenarios.
 
-  ### Purpose
+  #### Purpose
   To quantify the potential changes in suicide mortality due to temperature increases projected under different climate change scenarios up to 2050s.
 
-  ### Data Description
+  #### Data Description
+  All datasets provided are synthetic and generated to replicate the structure of the confidential original data; values do not reflect real observations or projections.
+
+  The analysis scripts are organized into multiple stages: data preparation, first and second stage modeling, generation of modeled suicide data, and projection analysis.
+
   - Observed Data: Synthetic daily suicide counts and temperature data for 52 cities from January 1, 1990 to December 31, 2010.
   - Modeled Data: Simulated future temperature projections for the same cities from 1990 to 2059 under SSP1-2.6, SSP2-4.5, and SSP5-8.5 scenarios.
-
-  #### Notes
-  All datasets provided are synthetic and generated to replicate the structure of the confidential original data; values do not reflect real observations or projections.
-  The analysis scripts are organized into multiple stages: data preparation, first and second stage modeling, generation of modeled suicide data, and projection analysis.
 authors:
 - name: Hyeyeong Ro
   affiliations:
