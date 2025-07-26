@@ -20,11 +20,9 @@ load("/data/output/metavariable.RData")
 load("/data/output/blupres.RData")
 load("/data/output/New_blups.RData")
 
-library(tsModel) ; library(MASS) ; library(plm)
-library(dlnm) ; library(gnm) ; library(splines) 
 library(dplyr) ; library(tidyr) ; library(MASS) ; library(ggplot2)
-library(mixmeta) ; library(mvmeta) 
-library(purrr); library(patchwork) 
+library(tsModel) ; library(dlnm) ; library(gnm) ; library(splines) 
+library(mixmeta) ; library(mvmeta) ; library(purrr); library(patchwork) 
 library(reshape2) ;  library(gridExtra) ; library(cowplot)
 library(grid) ; library(patchwork)
 ################################################################################

@@ -17,9 +17,8 @@ load("/data/observed/city_list.RData")
 # Load 1st stage ouput data
 load("/data/output//1st_coef_vcov.RData")
 
-library(tsModel) ; library(MASS) ; library(plm)
-library(dlnm) ; library(gnm) ; library(splines) 
 library(dplyr) ; library(tidyr) ; library(MASS) ; library(ggplot2)
+library(tsModel) ; library(dlnm) ; library(gnm) ; library(splines) 
 library(mixmeta) ; library(mvmeta) 
 library(purrr); library(patchwork) 
 ################################################################################
