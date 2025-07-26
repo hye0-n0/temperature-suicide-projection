@@ -12,12 +12,6 @@ This repository contains R scripts for analyzing and projecting the burden of su
 
 ---
 
-### `0.Calibration.R`
-- **Purpose**: Calibration of modeled temperature
-- **Contents**: Applies the bias-correction method developed within ISI-MIP (Hempel et al. 2013), using "fhempel.R".
-
----
-
 ### `1.FirstStage.R`
 - **Purpose**: First-stage estimation
 - **Contents**: Fits location-specific temperature–suicide associations using conditional Poisson regression and distributed lag non-linear models (DLNM).

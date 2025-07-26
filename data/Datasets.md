@@ -36,7 +36,7 @@ This folder contains **simulated datasets** designed to replicate the structure 
 
 ---
 
-## 📌 3. Climate Scenario Data (`ssp126.RData`, `ssp245.RData`, `ssp585.RData`)
+## 3. Climate Scenario Data (`ssp126.RData`, `ssp245.RData`, `ssp585.RData`)
 
 - **Format**: Data frame
 - **Columns**: Modeled temperature time series for each city

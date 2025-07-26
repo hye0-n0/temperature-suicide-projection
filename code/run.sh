@@ -5,9 +5,9 @@ set -ex
 
 Stop on first error
 set -e
- 
-echo ">>> Calibration of modeled temperauter..."
-Rscript code/0.Calibration.R
+
+echo ">>> Setting for analysis..."
+Rscript code/Setting.R
 
 echo ">>> Running first-stage analysis..."
 Rscript code/1.Firststage.R

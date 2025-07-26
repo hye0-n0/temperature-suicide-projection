@@ -7,8 +7,8 @@
 #     coefall, vcovall: cumulative overall coefficient and covariance (.RData)
 ################################################################################
 # Load observed data
-# load("/data/observed/slist.RData")
-# load("/data/observed/city_list.RData")
+load("/data/observed/slist.RData")
+load("/data/observed/city_list.RData")
 ################################################################################
 # DEFINE THE MAIN PARAMETERS FOR THE ANALYSIS
 # 1. Specification of Exposure function

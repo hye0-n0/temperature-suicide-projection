@@ -7,18 +7,18 @@
 #     anabs_city,afabs_city,anrel_city,afrel_city: attributable number and fraction by city (.RData)
 ################################################################################
 # Load data
-# load("/data/observed/slist.RData")
-# load("/data/observed/city_list.RData")
+load("/data/observed/slist.RData")
+load("/data/observed/city_list.RData")
 
-# load("/data/modeled/ssp126cal_50s.RData")
-# load("/data/modeled/ssp245cal_50s.RData")
-# load("/data/modeled/ssp585cal_50s.RData")
-# load("/data/modeled/modeled_suicide.RData")
+load("/data/modeled/ssp126cal_50s.RData")
+load("/data/modeled/ssp245cal_50s.RData")
+load("/data/modeled/ssp585cal_50s.RData")
+load("/data/modeled/modeled_suicide.RData")
 
-# load("/data/output/mvoverall.RData")
-# load("/data/output/metavariable.RData")
-# load("/data/output/blupres.RData")
-# load("/data/output/New_blups.RData")
+load("/data/output/mvoverall.RData")
+load("/data/output/metavariable.RData")
+load("/data/output/blupres.RData")
+load("/data/output/New_blups.RData")
 ################################################################################
 # 04 EXTRAPOLATION OF THE EXPOSURE-RESPONSE CURVE
 # 05 PROJECTION & QUANTIFICATION OF THE IMPACT
