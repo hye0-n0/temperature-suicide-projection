@@ -11,11 +11,17 @@
 #     Figure S3, Figure 1
 ################################################################################
 # Load observed data
-# load("/data/observed/slist.RData")
-# load("/data/observed/city_list.RData")
+load("/data/observed/slist.RData")
+load("/data/observed/city_list.RData")
 
 # Load 1st stage ouput data
 load("/data/output//1st_coef_vcov.RData")
+
+library(tsModel) ; library(MASS) ; library(plm)
+library(dlnm) ; library(gnm) ; library(splines) 
+library(dplyr) ; library(tidyr) ; library(MASS) ; library(ggplot2)
+library(mixmeta) ; library(mvmeta) 
+library(purrr); library(patchwork) 
 ################################################################################
 # 02 Multivariate meta-analysis of reduced coef and computation of BLUPs
 # - Second stage modeling

@@ -7,7 +7,13 @@
 #     suicideproj: modeled sucide series (.RData)
 ################################################################################
 # Load observed data
-# load("/data/observed/slist.RData")
+load("/data/observed/slist.RData")
+
+library(tsModel) ; library(MASS) ; library(plm)
+library(dlnm) ; library(gnm) ; library(splines) 
+library(dplyr) ; library(tidyr) ; library(MASS) ; library(ggplot2)
+library(mixmeta) ; library(mvmeta) 
+library(purrr); library(patchwork) 
 ################################################################################
 # 03 CREATE MODELED SUICIDE SERIES
 ################################################################################

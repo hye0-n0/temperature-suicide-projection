@@ -9,6 +9,10 @@
 # Load observed data
 load("/data/observed/slist.RData")
 load("/data/observed/city_list.RData")
+
+library(dplyr) ; library(tidyr) ; library(MASS) ; library(ggplot2)
+library(tsModel) ; library(MASS) ; library(plm)
+library(dlnm) ; library(gnm) ; library(splines) 
 ################################################################################
 # DEFINE THE MAIN PARAMETERS FOR THE ANALYSIS
 # 1. Specification of Exposure function
