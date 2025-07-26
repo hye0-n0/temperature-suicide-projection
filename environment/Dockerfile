@@ -6,7 +6,7 @@ ARG DEBIAN_FRONTEND=noninteractive
 # Install required R packages from CRAN
 RUN R -e "install.packages(c(\
   'dplyr', 'tidyr', 'MASS', 'ggplot2', \
-  'tsModel', 'dlnm', 'gnm', 'splines', \
+  'tsModel', 'plm', 'dlnm', 'gnm', 'splines', \
   'mixmeta', 'mvmeta', 'purrr', 'reshape2', \
   'gridExtra', 'cowplot' \
 ))"
