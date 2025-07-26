@@ -318,7 +318,7 @@ for (i in names(suicide_region)) {
 # 5. SAVE AN, AF DATASETS
 save(anabs, anrel, afabs, afrel, file="/data/output/ANAF.RData")
 save(anabs_city,afabs_city,anrel_city,afrel_city, file="/data/output/ANAF_city.RData")
-
+rm(ansim)
 ################################################################################
 # - FIGURE 2 (Difference in total AF%)
 
