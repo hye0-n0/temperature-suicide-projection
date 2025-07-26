@@ -10,10 +10,10 @@ echo ">>> Setting for analysis..."
 Rscript /code/Setting.R
 
 echo ">>> Running first-stage analysis..."
-Rscript /code/1.Firststage.R
+Rscript /code/1.FirstStage.R
 
 echo ">>> Running second-stage analysis..."
-Rscript /code/2.Secondstage.R
+Rscript /code/2.SecondStage.R
 
 echo ">>> Gernerating modeled suicide mortality..."
 Rscript /code/3.ModeledSuicide.R
