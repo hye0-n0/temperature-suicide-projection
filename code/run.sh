@@ -2,7 +2,6 @@
 set -ex
 
 # This is the master script for the capsule. When you click "Reproducible Run", the code in this file will execute.
-bash run.sh "$@"
 
 Stop on first error
 set -e
