@@ -21,6 +21,14 @@ library(dplyr) ; library(tidyr) ; library(MASS) ; library(ggplot2)
 library(tsModel) ; library(dlnm) ; library(gnm) ; library(splines) 
 library(mixmeta) ; library(mvmeta) 
 library(purrr); library(patchwork) 
+
+varfun = "ns"
+vardf = 2
+varper = 50 
+cenper = 50
+
+# 2. Specification of Lag function
+lag = 3
 ################################################################################
 # 02 Multivariate meta-analysis of reduced coef and computation of BLUPs
 # - Second stage modeling

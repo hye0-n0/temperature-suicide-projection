@@ -25,6 +25,12 @@ library(tsModel) ; library(dlnm) ; library(gnm) ; library(splines)
 library(mixmeta) ; library(mvmeta) ; library(purrr); library(patchwork) 
 library(reshape2) ;  library(gridExtra) ; library(cowplot)
 library(grid) ; library(patchwork)
+
+varfun = "ns"
+vardf = 2
+varper = 50 
+cenper = 50
+lag = 3
 ################################################################################
 # 04 EXTRAPOLATION OF THE EXPOSURE-RESPONSE CURVE
 # 05 PROJECTION & QUANTIFICATION OF THE IMPACT
