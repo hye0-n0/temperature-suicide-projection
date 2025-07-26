@@ -81,7 +81,7 @@ for(i in seq(length(slist))) {
   # length(unique(data$stratum)) # how many stratum as a total
   
   # Expand lagged exposure (tmean)
-  tlag = lag(data$tmean,0:3)      
+  tlag = Lag(data$tmean,0:3)      
   tsub = tlag[sub, ] # Remove stratum without an event
   
   # Define the crossbasis
