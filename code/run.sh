@@ -3,8 +3,8 @@ set -ex
 
 # This is the master script for the capsule. When you click "Reproducible Run", the code in this file will execute.
 
-Stop on first error
-set -e
+#Stop on first error
+#set -e
 
 echo ">>> Setting for analysis..."
 Rscript code/Setting.R
